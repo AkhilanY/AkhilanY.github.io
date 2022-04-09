@@ -1,0 +1,44 @@
+.header {
+    width: 50%;
+    float: left;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+.header h1 {
+    font-size: 120px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: fit-content;
+}
+
+.header div {
+    margin: auto;
+    width: fit-content;
+    font-size: larger;
+    text-align: center;
+}
+
+.header span {
+    color: yellow;
+}
+
+@media screen and (max-width:950px) {
+    .header h1 {
+        font-size: 80px;
+    }
+    .header div {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header div {
+        font-size: medium;
+    }
+    .header {
+        width: 100%;
+    }
+}

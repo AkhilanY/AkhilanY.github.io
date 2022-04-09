@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 8px;
+    min-height: 30px;
+}
+
+.container:hover .listPC {
+    display: flex;
+    animation: appear 0.6s;
+}
+
+.listPC {
+    display: none;
+    flex-direction: row;
+    list-style: none;
+    padding:8px 12px;
+    background-color: #0c084c;
+    opacity: 0.9;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.listAndroid {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding:8px 12px;
+    background-color: #0c084c;
+    opacity: 0.9;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.container li {
+    color:white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.container li.svg {
+    vertical-align: bottom;
+}
+
+.container li:hover {
+    background-color: rgba(33, 33, 95, 0.797);
+}
+
+.container li:active {
+    transform: scale(0.8);
+}
+
+/*
+.container li:hover span {
+    display: inline;
+
+}
+
+.container li span {
+    padding: 10px 12px;
+    font-size: 18px;
+    vertical-align: top;
+    width: 0;
+    
+}
+
+@keyframes widen {
+    from {width: 0;}
+    to {opacity: 100%;}
+}
+*/
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 0.9;}
+}

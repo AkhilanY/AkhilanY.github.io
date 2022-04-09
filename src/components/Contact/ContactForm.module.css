@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    margin: 20px auto;
+    font-size: large;
+    margin:20px;
+    background-color: rgb(21, 25, 33);
+    width: 40%;
+    padding:20px 12px;
+    padding-top: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.topbar {
+    display: flex;
+    padding:12px 8px;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+    justify-content: end;
+    border-bottom: 1px solid rgb(42, 49, 62);
+}
+
+.topbar svg {
+    margin: 4px;
+}
+
+.container input,textarea {
+    display: block;
+    padding: 8px 12px;
+    font-size: large;
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    font-family: 'JetBrains Mono',monospace;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    padding: 12px;
+    color:yellowgreen;
+}
+label::after {
+    content: '~$';
+    color: pink;
+}
+
+.submitbtn {
+    color:blue;
+    font-family: 'JetBrains Mono',monospace;
+    font-size: large;
+    padding: 12px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(42, 49, 62);
+    border-radius: 5px;
+    margin: 4px auto;
+    width: 100%;
+}
+
+.submitbtn:hover {
+    text-decoration: underline;
+    border-color: rgb(7, 7, 172);
+}
+
+@media  screen and (max-width:1200px) {
+    .container {
+        width: 60%;
+    }
+    .othercontainer {
+        width: 40%;
+    }
+    .othercontainer h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .wrapper {
+        display: block;
+    }
+    .othercontainer {
+        display: none;
+    }
+}
+
+
+.othercontainer {
+    margin:auto;
+    font-size: large;
+    text-align: center;
+    width: 40%;
+    padding:20px 12px;
+}
+
+.yellow {
+    color:yellow;
+}
+.red {
+    color: rgb(160, 34, 34);
+}
+.blue {
+    color: rgb(37, 37, 142);
+}
+.green {
+    color:yellowgreen;
+}
